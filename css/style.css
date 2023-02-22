@@ -83,6 +83,8 @@ h4{
 .svg-search img{
     width: 30px;
     vertical-align: middle;
+    filter: grayscale(100%);
+
 }
 .bg-icon{
     width: 40px;
@@ -120,7 +122,6 @@ main{
     width: 30px;
     display: none;
 }
-
 .install-app img, .install-app p, .login-user img, .login-user h4{
     display: inline-block;
 }
