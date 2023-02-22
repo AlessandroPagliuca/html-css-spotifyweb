@@ -28,6 +28,9 @@ ul{
 p{
     color: var(--color-grey);
 }
+h4{
+    color: var(--color-white);
+}
 /*/General*/
 
 /*Utility*/
@@ -42,6 +45,9 @@ p{
 .d-flex{
     display: flex;
 }
+.flex-col{
+    flex-direction: column;
+}
 .j-end{
     justify-content: flex-end;
 }
@@ -51,6 +57,9 @@ p{
 .a-center{
     align-items: center;
     align-content: center;
+}
+.a-self-end{
+    align-content: flex-end;
 }
 .padding-15{
     padding: 15px;
@@ -67,6 +76,23 @@ p{
 .line-height{
     line-height: 2rem;
 }
+
+.text-white a{
+    color: var(--color-white);
+}
+.svg-search img{
+    width: 30px;
+    vertical-align: middle;
+}
+.bg-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: var(--color-grey);
+    vertical-align: middle;
+    color: var(--color-black);
+    
+}
 /*Utility*/
 
 /*main*/
@@ -75,11 +101,40 @@ main{
     height: calc(100% - 90px);
     color: var(--color-white);
 }
+/*main-nav*/
 .main-nav{
     width: 230px;
     min-height: 480px;
     background-color: var(--color-black);
 }
+.playlist-box li{
+    padding-top: 15px;
+}
+.playlist-box a{
+    color: var(--color-grey);
+}
+.logo-m{
+    width: 120px;
+}
+.logo-xs{
+    width: 30px;
+    display: none;
+}
+
+.install-app img, .install-app p, .login-user img, .login-user h4{
+    display: inline-block;
+}
+.login-user img{
+    background-color: var(--color-grey);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.install-app{
+    border-bottom: 2px solid var(--color-grey);
+
+}
+/*/main-nav*/
 .main-content{
     width: calc(100% - 230px);
     height: 100%;
@@ -167,12 +222,25 @@ main{
 
 @media screen and (max-width:576px){
     .main-nav{
-        width: 90px;
+        width: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .main-content{
-        width: calc(100% - 90px);
+        width: calc(100% - 70px);
     }
     #call-to-action{
-        width: calc(100% - 90px);
+        width: calc(100% - 70px);
     }
+    .main-nav a, .main-nav .playlist-box, .main-nav .logo-m, 
+    .install-app p, .login-user h4{
+        display: none;
+    }
+    .main-nav .logo-xs{
+        display: block;
+    }
+    
+
+    
 }
