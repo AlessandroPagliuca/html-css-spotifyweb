@@ -12,7 +12,6 @@
 --color-grey: #7c7e83 ;
 --color-playbar: #282828 ;
 --color-green: #adff2f ;
---color-black: # ;
 }
 html{
     scroll-behavior: smooth;
@@ -77,7 +76,6 @@ p{
 main{
     width: 100%;
     height: calc(100% - 90px);
-    background-color: var(--color-dark-bg);
     color: var(--color-white);
 }
 .main-nav{
@@ -97,14 +95,14 @@ main{
     right: 0;
     width: calc(100% - 230px);
     height: 80px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 #call-to-action a{
     color: var(--color-white);
 
 }
 .btn-call-to-action{
-    padding: 10px 25px;
+    padding: 10px 20px;
     display: inline-block;
     border: 1px solid var(--color-grey);
     border-radius: 20px;
@@ -130,6 +128,12 @@ main{
 .col img{
     width: 100%;
     display: block;
+}
+.test img{
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 30px;
 }
 /*main*/
 
