@@ -86,13 +86,10 @@ h4{
     filter: grayscale(100%);
 
 }
-.bg-icon{
-    width: 40px;
-    height: 40px;
-    border-radius: 2px;
-    background-color: var(--color-grey);
+.co-white-icon{
+    font-size: 40px;
+    color: var(--color-grey);
     vertical-align: middle;
-    color: var(--color-black);
     
 }
 /*Utility*/
@@ -109,12 +106,16 @@ main{
     min-height: 480px;
     background-color: var(--color-black);
 }
+.text-nav{
+    color: var(--color-grey);
+}
+.text-nav:hover{
+    color: var(--color-white);
+}
 .playlist-box li{
     padding-top: 15px;
 }
-.playlist-box a{
-    color: var(--color-grey);
-}
+
 .logo-m{
     width: 120px;
 }
@@ -127,6 +128,7 @@ main{
 }
 .login-user img{
     background-color: var(--color-grey);
+    padding: 3px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
