@@ -192,15 +192,23 @@ main{
 .main-section{
     margin-top: 80px;
 }
-.interation-link li{
+.main-section ul li{
     padding: 15px;
     text-transform: uppercase;
 }
 .interation-link a{
     color: var(--color-grey);
 }
-.interation-link li{
-    border-bottom: 2px solid var(--color-green);
+.interation-link a:after{
+    content: '';
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-top: 5px;
+    border-bottom: 2px solid transparent;
+}
+.interation-link li:hover a:after{
+   border-color: var(--color-green);
 }
 .row{
     margin: 0px -15px;
