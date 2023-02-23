@@ -67,6 +67,9 @@ h4{
 .padding-15{
     padding: 15px;
 }
+.padding-l-r{
+    padding: 0 15px;
+}
 .padding-top-15{
     padding-top: 15px;
 }
@@ -266,6 +269,112 @@ main{
     position: fixed;
     z-index: 1000;
 }
+.footer-left-right{
+    width: 230px;
+}
+.footer-mid{
+    width: calc(100% - 230px);
+}
+.footer-left-right, .footer-mid{
+    color: var(--color-white);
+}
+.flex-footer-center{
+    align-items: center;
+}
+.flex-footer-col{
+    flex-flow: column wrap;
+    align-content: center;
+}
+.text-footer-s{
+    font-size: 0.8rem;
+}
+.text-footer-sm{
+    font-size: 0.6rem;
+}
+.col-footer{
+    width: calc(100% / 3);
+}
+
+.footer-img{
+    display:block;
+    width: 100%;
+    border-radius: 20px;
+}
+.icon-footer{
+    padding: 0 2px;
+}
+.cursor-p{
+    cursor: pointer;
+}
+.icon-m{
+    font-size:30px; 
+}
+.icon-s{
+    font-size: 23px;  
+}
+.icon-s, .icon-m{
+    color: var(--color-white);
+}
+.scale-icon{
+    transform: scale(1);
+    transition-duration: 1s;
+}
+.scale-icon:hover{
+    transform: scale(1.3);
+}
+footer form label {
+    padding: 0 5px;
+}
+input[type="range"] {
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: var(--color-grey);
+    border-radius: 10px;
+    outline: none;
+    
+  }
+  
+input[type="range"]::-webkit-slider-thumb {
+    display: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+input[type="range"]:hover::-webkit-slider-thumb{
+    display: block;
+    background-color: var(--color-green);
+}
+  
+input[type="range"]::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+input[type="range"]:hover::-moz-range-thumb{
+    display: block;
+    background-color: var(--color-green);
+}
+
+.box-debug{
+    width: 50px;
+    height: 50px;
+}
+.footer-icon-right{
+    width: 30px;
+}
+.footer-icon-right i{
+    font-size: 12px;
+}
+.footer-bar-vol-right{
+    width: 100%;
+}
+
+  
+/*
 .play-music{
     width: 230px;
 }
@@ -277,32 +386,10 @@ main{
     border-radius: 3px;
     vertical-align: middle;
 }
-.play-icon{
-    color: red;
-}
 .play-box{
     width: calc(100% - 230px) ;
 }
-.icon-m{
-    font-size:30px;
-    cursor: pointer;
-}
-.icon-s{
-    font-size: 20px;
-    cursor: pointer;
-}
-.icon-s, .icon-m{
-    padding: 0 15px;
-    color: var(--color-white);
 
-}
-.scale-icon{
-    transform: scale(1);
-    transition-duration: 1s;
-}
-.scale-icon:hover{
-    transform: scale(1.3);
-}
 .play-bar{
     width: 100%;
 }
@@ -313,7 +400,7 @@ main{
 input [type="range"]{
     background-color: var(--color-green);
 }
-
+*/
 /*/footer playbar*/
 
 /*@media*/
