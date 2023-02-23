@@ -54,6 +54,9 @@ h4{
 .j-center{
     justify-content: center;
 }
+.j-between{
+    justify-content: space-between;
+}
 .a-center{
     align-items: center;
     align-content: center;
@@ -66,6 +69,9 @@ h4{
 }
 .padding-top-15{
     padding-top: 15px;
+}
+.margin-l-r-15{
+    margin: 0 15px;
 }
 .up-case{
     text-transform: uppercase;
@@ -259,6 +265,58 @@ main{
     background-color: var(--color-playbar);
     position: fixed;
     z-index: 1000;
+}
+.play-music{
+    width: 230px;
+}
+.music-img{
+    width: 40px;
+}
+.music-img img{
+    width: 100%;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+.play-icon{
+    color: red;
+}
+.play-box{
+    width: calc(100% - 230px) ;
+}
+.icon-m{
+    font-size:30px;
+    cursor: pointer;
+}
+.icon-s{
+    font-size: 20px;
+    cursor: pointer;
+}
+.icon-s, .icon-m, .minute, .bar{
+    padding: 0 15px;
+    color: var(--color-white);
+
+}
+.scale-icon{
+    transform: scale(1);
+    transition-duration: 1s;
+}
+.scale-icon:hover{
+    transform: scale(1.3);
+}
+.play-bar{
+    width: 100%;
+}
+.bar{
+    width: calc(100% - 60%);
+    height: 5px;
+    background-color: #7c7e83;
+}
+.minute{
+    width: 60%;
+    display: inline-block;
+}
+.play-vol{
+    width: 230px;
 }
 
 /*footer playbar*/
