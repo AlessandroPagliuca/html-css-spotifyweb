@@ -16,7 +16,7 @@
 
         <main class="d-flex ">
             <!--Start main nav-->
-            <nav class="main-nav padding-15  debug">
+            <nav class="main-nav padding-15 ">
 
                 <div class="top-nav">
 
@@ -24,7 +24,7 @@
                     <img src="./img/logo-small.svg" alt="" class="logo-xs">
 
                     <!--Start interation links nav-->
-                    <div class=" padding-top-15 debug">
+                    <div class=" padding-top-15 ">
                         <ul class="svg-search text-nav icon-search">
                             <li>
                                 <img src="./img/home.svg" alt="home">
@@ -43,7 +43,7 @@
                     <!--/interation links nav--> 
 
                     <!--Start Playlist-->
-                    <div class="playlist-box padding-top-15 debug">
+                    <div class="playlist-box padding-top-15 ">
                         <h3 class="up-case">Playlist</h3>
                         <ul class="padding-top-15">
                             <li>
@@ -75,7 +75,7 @@
                     </div>
                     <!--/Playlist-->
                 </div>
-                <div class="bottom-nav debug">
+                <div class="bottom-nav">
                     <!--Start install app-->
                     <div class="install-app svg-search">
                         <a href="#">
@@ -289,10 +289,12 @@
                         <i class="fa-solid fa-forward-step icon-s"></i>
                         <i class="fa-solid fa-rotate-right icon-s"></i>
                     </div>
-                    <div class="play-bar d-flex padding-top-15">
-                        <span class="minute"> 0.25</span>
-                        <span class="bar"></span>
-                        <span class="minute">04.35</span>
+                    <div class="play-bar d-flex j-center a-center padding-top-15">
+                        <form action=""></form>
+                            <label for="minute">0.25</label>
+                            <input type="range" id="volume" name="volume" value="15" min="0" max="100">
+                            <label for="volume">4.35</label>
+                          
                     </div>
                 </div>
                 <div class="play-vol debug">

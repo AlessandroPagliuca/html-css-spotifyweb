@@ -291,7 +291,7 @@ main{
     font-size: 20px;
     cursor: pointer;
 }
-.icon-s, .icon-m, .minute, .bar{
+.icon-s, .icon-m{
     padding: 0 15px;
     color: var(--color-white);
 
@@ -306,20 +306,15 @@ main{
 .play-bar{
     width: 100%;
 }
-.bar{
-    width: calc(100% - 60%);
-    height: 5px;
-    background-color: #7c7e83;
-}
-.minute{
-    width: 60%;
-    display: inline-block;
-}
+
 .play-vol{
     width: 230px;
 }
+input [type="range"]{
+    background-color: var(--color-green);
+}
 
-/*footer playbar*/
+/*/footer playbar*/
 
 /*@media*/
 @media screen and (max-width:1200px){
