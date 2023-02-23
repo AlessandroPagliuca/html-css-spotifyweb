@@ -372,35 +372,6 @@ input[type="range"]:hover::-moz-range-thumb{
 .footer-bar-vol-right{
     width: 100%;
 }
-
-  
-/*
-.play-music{
-    width: 230px;
-}
-.music-img{
-    width: 40px;
-}
-.music-img img{
-    width: 100%;
-    border-radius: 3px;
-    vertical-align: middle;
-}
-.play-box{
-    width: calc(100% - 230px) ;
-}
-
-.play-bar{
-    width: 100%;
-}
-
-.play-vol{
-    width: 230px;
-}
-input [type="range"]{
-    background-color: var(--color-green);
-}
-*/
 /*/footer playbar*/
 
 /*@media*/
