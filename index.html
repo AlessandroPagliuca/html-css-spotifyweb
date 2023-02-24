@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify Web</title>
+    <link rel="icon" href="./img/favicon.ico">
 </head>
 <body>
     <div class="wrapper">
@@ -20,7 +21,7 @@
 
                 <div class="top-nav  padding-15 ">
 
-                    <img src="./img/logo.svg" alt="" class="logo-m">
+                    <img src="./img/logo.svg" alt="" class="dis-none ">
                     <img src="./img/logo-small.svg" alt="" class="logo-xs">
 
                     <!--Start interation links nav-->
@@ -28,21 +29,21 @@
                         <ul class="svg-search nav-int">
                             <li>
                                 <a href="#" class="text-nav">
-                                    <img src="./img/home.svg" alt="home">
-                                    <span>Home</span>
+                                    <img src="./img/home.svg" alt="home" class="img-block">
+                                    <span class="dis-none">Home</span>
                                 </a>
                                 
                             </li>
                             <li class="padding-top-15">
                                 <a href="#" class="text-nav">
                                     <img src="./img/search.svg" alt="search">
-                                    <span>Cerca</span>
+                                    <span class="dis-none">Cerca</span>
                                 </a>
                             </li>
                             <li class="padding-top-15">
                                 <a href="#" class="text-nav">
                                     <img src="./img/libreria.svg" alt="bookshelf">
-                                    <span>La tua libreria</span>
+                                    <span class="dis-none">La tua libreria</span>
                                 </a>
                             </li>
                         </ul>
@@ -52,7 +53,7 @@
                     <!--Start Playlist-->
                     
                         <h3 class="up-case padding-top-15 d-none">Playlist</h3>
-                        <ul class="playlist-box padding-15">
+                        <ul class="playlist-box padding-15 dis-none">
                             <li>
                                 
                                 <a href="#" class="text-nav">
@@ -85,12 +86,12 @@
                     
                     <!--/Playlist-->
                 </div>
-                <div class="bottom-nav padding-l-r">
+                <div class="bottom-nav padding-l-r ">
                     <!--Start install app-->
                     <div class="install-app svg-search">
                         <a href="#"  class="text-nav" >
-                            <img src="./img/download.svg" alt="">
-                            <span>installa app</span>
+                            <img src="./img/download.svg" alt="download">
+                            <span class="dis-none">installa app</span>
                         </a>
                     </div>
                     <!--Start install app-->
@@ -98,8 +99,8 @@
                     <!--Start login-->
                     <div class="login-user svg-search padding-top-15">
                         <a href="#">
-                            <img src="./img/profile.svg" alt="">
-                            <h4>John Doe</h4>
+                            <img src="./img/profile.svg" alt="profile">
+                            <h4 class="dis-none">John Doe</h4>
                         </a>
                     </div>
                     <!--/login-->
@@ -282,23 +283,23 @@
         </main>
         <footer class="d-flex ">
 
-            <nav  id="playbar" class="footer-playbar d-flex flex-footer-center">
+            <nav  id="playbar" class=" d-flex flex-footer-center">
 
-                <div class="footer-left-right flex-footer-center ">
+                <div class="footer-left footer-flex j-center flex-footer-center ">
                     <div class="col-footer footer-img cursor-p ">
                         <img src="./img/sinister.jpeg" alt="sinister" class="">
                     </div>
-                    <div class="col-footer ">
+                    <div class="col-footer dis-none">
                         <h4 class="text-footer-s">Sinister</h4>
                         <p class="text-footer-sm">Nome brano</p>
                     </div>
-                    <div class="col-footer ">
+                    <div class="col-footer dis-none">
                         <i class="fa-regular fa-heart icon-footer"></i>
                         <i class="fa-regular fa-folder icon-footer"></i>
                     </div>
                 </div>
 
-                <div class="footer-mid flex-footer-col ">
+                <div class="footer-mid flex-footer-col">
                     <div class="m-auto">
                         <i class="fa-solid fa-shuffle padding-l-r icon-s"></i>
                         <i class="fa-solid fa-backward-step padding-l-r icon-s"></i>
@@ -325,9 +326,12 @@
                     <div class=" footer-flex flex-footer-center footer-icon-right padding-l-r cursor-p">
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
-                    <form class=" footer-flex flex-footer-center footer-bar-vol-right padding-l-rmore-int cursor-p">
-                        <input type="range" id="volume" name="volume" min="0" max="10">
-                    </form>
+                    <div class="more-int cursor-p fa-solid fa-ellipsis">
+                        <form class=" footer-flex flex-footer-center footer-bar-vol-right  ">
+                            <input type="range" id="volume" name="volume" min="0" max="10">
+                        </form>
+                    </div>
+                    
                     
                 </div>
             </nav>

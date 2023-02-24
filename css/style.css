@@ -93,6 +93,9 @@ h3{
 .padding-top-15{
     padding-top: 15px;
 }
+.padding-bot-15{
+    padding-bottom: 15px;
+}
 .margin-l-r-15{
     margin: 0 15px;
 }
@@ -314,7 +317,7 @@ main{
 .footer-flex{
     display: flex;
 }
-.footer-left-right{
+.footer-left{
     display: flex;
     width: 230px;
 }
@@ -453,7 +456,7 @@ input[type="range"]:hover::-moz-range-thumb{
 .footer-bar-vol-right{
     width: 100%;
 }
-.fa-angle-up{
+.fa-ellipsis{
     display: none;
 }
 /*/footer playbar*/
@@ -477,39 +480,51 @@ input[type="range"]:hover::-moz-range-thumb{
     #volume{
         display: none;
     }
-    .fa-angle-up{
+    .fa-ellipsis{
         display: block;
     }
     .more-int::before{
-        font-size: 12px;
-        font-family: 'Font Awesome 6 Free';
+        font-size: 1.2rem;
         position: relative;
         top: 0;
         left: 0;
+        padding: 0 10px;
         color: var(--color-white);
     }
+
     
     .more-int:hover #volume{
         transform: rotate(90deg);
         position: absolute;
-        top: -12px;
-        right: 70px ;
+        top: -2px;
+        right: -10px ;
         display: block;
-        
-
     }
+    
     .footer-right{
         display: flex;
-        width: 120px;
+        width: 130px;
     }
     .footer-mid{
-        width: calc(100% - 350px);
+        width: calc(100% - 360px);
     
+    }
 }
 
 @media screen and (max-width:768px){
     .col{
         width: calc(100% / 2);
+    }
+    .footer-right{
+        display: flex;
+        width: 50px;
+    }
+    .footer-mid{
+        width: calc(100% - 280px);
+    
+    }
+    .footer-icon-right{
+        display: none;
     }
 }
 
@@ -526,19 +541,52 @@ input[type="range"]:hover::-moz-range-thumb{
     #call-to-action{
         width: calc(100% - 70px);
     }
-    .main-nav a, .main-nav .playlist-box, .main-nav .logo-m, 
-    .install-app p, .login-user h4, .d-none{
+    .d-none{
         display: none;
     }
+    
     .main-nav .logo-xs{
         display: block;
-    }  
+    } 
+    .dis-none{
+        display: none;
+    }
+    .footer-left{
+        width: 50px;
+    }
+    .footer-mid{
+        width: calc(100% - 100px);
+    
+    }
+    .install-app{
+        border-bottom: 0px solid var(--color-grey);
+    
+    }
 }
 @media screen and (max-width:400px){
     .col{
         width: 100%;
     }
+    .footer-right{
+        display: none; 
+        width: 0;   
+    }
+    .footer-mid{
+        width: calc(100% - 50px);
+    
+    }
 }
+@media screen and (max-width:350px){
+    .footer-left{
+        display: none; 
+        width: 0;   
+    }
+    .footer-mid{
+        width: 100%;
+    
+    }
+}
+
 @media screen and (max-height:150px){
     #call-to-action{
         display: none;
