@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify Web</title>
 </head>
@@ -18,7 +18,7 @@
             <!--Start main nav-->
             <nav class="main-nav padding-15 ">
 
-                <div class="top-nav">
+                <div class="top-nav d-flex debug">
 
                     <img src="./img/logo.svg" alt="" class="logo-m">
                     <img src="./img/logo-small.svg" alt="" class="logo-xs">
@@ -43,9 +43,9 @@
                     <!--/interation links nav--> 
 
                     <!--Start Playlist-->
-                    <div class="playlist-box padding-top-15 ">
-                        <h3 class="up-case">Playlist</h3>
-                        <ul class="padding-top-15">
+                    
+                        <h3 class="up-case padding-top-15">Playlist</h3>
+                        <ul class="playlist-box padding-top-15">
                             <li>
                                 <i class="fa-solid fa-square-plus co-white-icon"></i>
                                 <a href="#" class="text-nav">Crea Playlist</a>
@@ -72,7 +72,7 @@
                                 <a href="#" class="text-nav">Nome Playlist</a>
                             </li>
                         </ul>
-                    </div>
+                    
                     <!--/Playlist-->
                 </div>
                 <div class="bottom-nav">
@@ -287,14 +287,14 @@
                 </div>
 
                 <div class="footer-mid d-flex flex-footer-col ">
-                    <div class="">
+                    <div class="m-auto">
                         <i class="fa-solid fa-shuffle padding-l-r icon-s"></i>
                         <i class="fa-solid fa-backward-step padding-l-r icon-s"></i>
                         <i class="fa-regular fa-circle-play padding-l-r icon-m scale-icon"></i>
                         <i class="fa-solid fa-forward-step padding-l-r icon-s"></i>
                         <i class="fa-solid fa-rotate-right padding-l-r icon-s"></i>
                     </div>
-                    <div class=" padding-top-15 ">
+                    <div class="width-100 padding-top-15 ">
                         <form class=" d-flex flex-footer-center">
                             <label class="text-footer-sm " for="minute">0.25</label>
                             <input type="range" id="minute" name="minute" min="0" max="10">
@@ -313,10 +313,9 @@
                     <div class=" d-flex flex-footer-center footer-icon-right padding-l-r">
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
-                        <form class=" d-flex flex-footer-center footer-bar-vol-right padding-l-r">
-                            <input type="range" id="minute" name="minute" min="0" max="10">
-                        </form>
-                    
+                    <form class=" d-flex flex-footer-center footer-bar-vol-right padding-l-r">
+                        <input type="range" id="minute" name="minute" min="0" max="10">
+                    </form>
                 </div>
             </nav>
            
