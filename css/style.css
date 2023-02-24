@@ -438,3 +438,8 @@ input[type="range"]:hover::-moz-range-thumb{
         width: 100%;
     }
 }
+@media screen and (max-height:150px) {
+    #call-to-action{
+        display: none;
+    }
+}
