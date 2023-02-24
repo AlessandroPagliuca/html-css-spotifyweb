@@ -4,6 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-grey);
+    border-radius: 10px;
+    border: 2px solid var(--color-grey);
+}
+
 
 :root{
 --color-black: #000000 ;
@@ -13,6 +23,7 @@
 --color-playbar: #282828 ;
 --color-green: #adff2f ;
 }
+
 html{
     scroll-behavior: smooth;
     
@@ -27,9 +38,14 @@ ul{
     list-style: none;
 }
 p{
+    font-size: .8rem;
     color: var(--color-grey);
 }
 h4{
+    color: var(--color-white);
+}
+h3{
+    font-size: .9rem;
     color: var(--color-white);
 }
 /*/General*/
@@ -122,6 +138,18 @@ main{
     background-color: var(--color-black);
     overflow: hidden;
 }
+.main-nav ul li{
+    margin-left: -15px;
+}
+.nav-int a{
+    padding-left: 12px;
+}
+.nav-int  a:hover{
+    border-left: 3px solid var(--color-green);
+    border-radius: 1px;
+    
+}
+
 .text-nav{
     color: var(--color-grey);
 }
@@ -247,10 +275,13 @@ main{
 .test2 img{
     border-radius: 15px;
 }
-.cover-image{
+.cover-image, .cover-img-br{
     position: relative;
 }
-.col .cover-image:after{
+.cover-img-br:after{
+    border-radius: 50%;
+}
+.col .cover-image:after, .col .cover-img-br:after{
     font-family: 'Font Awesome 6 Free';
     font-size: 3rem;
     content: "\f144";
@@ -258,6 +289,7 @@ main{
     opacity: 0;
     justify-content: center;
     align-items: center;
+    color: var(--color-white);
     background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 0;
@@ -266,7 +298,7 @@ main{
     height: 100%;
     transition: opacity 1s;
 }
-.col:hover .cover-image::after{
+.col:hover .cover-image::after, .col:hover .cover-img-br::after{
     opacity: 1;
 }
 /*main*/
@@ -286,6 +318,10 @@ main{
     display: flex;
     width: 230px;
 }
+.footer-right{
+    display: flex;
+    width: 230px;
+}
 .width-100{
     width: 100%;
 }
@@ -296,7 +332,7 @@ main{
     display: flex;
     width: calc(100% - 460px);
 }
-.footer-left-right, .footer-mid{
+.footer-left, .footer-right, .footer-mid{
     color: var(--color-white);
 }
 .flex-footer-center{
@@ -315,14 +351,25 @@ main{
 .text-footer-sm{
     font-size: 0.6rem;
 }
+.text-footer-sm:hover{
+    color: var(--color-white);
+}
+.text-footer-s, .text-footer-sm{
+    padding-left: 5px;
+    cursor: pointer;
+
+} 
 .col-footer{
     width: calc(100% / 3);
 }
-
 .footer-img{
+    width: 50px;
+    padding-left: 15px;
+}
+.footer-img img{
     display:block;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 .icon-footer{
     padding: 0 2px;
@@ -336,8 +383,19 @@ main{
 .icon-s{
     font-size: 23px;  
 }
-.icon-s, .icon-m{
+.icon-footer{
+    color: var(--color-grey);
+
+}
+.icon-footer:hover{
     color: var(--color-white);
+    cursor: pointer;
+}
+.icon-s:hover, .icon-m{
+    color: var(--color-white);
+    cursor: pointer;
+
+
 }
 .scale-icon{
     transform: scale(1);
@@ -383,13 +441,9 @@ input[type="range"]:hover::-moz-range-thumb{
     background-color: var(--color-green);
 }
 #volume{
-    width: 100px;
+    width: 80px;
 }
 
-.box-debug{
-    width: 50px;
-    height: 50px;
-}
 .footer-icon-right{
     width: 30px;
 }
@@ -398,6 +452,9 @@ input[type="range"]:hover::-moz-range-thumb{
 }
 .footer-bar-vol-right{
     width: 100%;
+}
+.fa-angle-up{
+    display: none;
 }
 /*/footer playbar*/
 
@@ -417,6 +474,36 @@ input[type="range"]:hover::-moz-range-thumb{
     .col{
         width: calc(100% / 3);
     }
+    #volume{
+        display: none;
+    }
+    .fa-angle-up{
+        display: block;
+    }
+    .more-int::before{
+        font-size: 12px;
+        font-family: 'Font Awesome 6 Free';
+        position: relative;
+        top: 0;
+        left: 0;
+        color: var(--color-white);
+    }
+    
+    .more-int:hover #volume{
+        transform: rotate(90deg);
+        position: absolute;
+        top: -12px;
+        right: 70px ;
+        display: block;
+        
+
+    }
+    .footer-right{
+        display: flex;
+        width: 120px;
+    }
+    .footer-mid{
+        width: calc(100% - 350px);
     
 }
 
@@ -452,7 +539,7 @@ input[type="range"]:hover::-moz-range-thumb{
         width: 100%;
     }
 }
-@media screen and (max-height:150px) {
+@media screen and (max-height:150px){
     #call-to-action{
         display: none;
     }
