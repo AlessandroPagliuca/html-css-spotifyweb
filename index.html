@@ -18,7 +18,7 @@
             <!--Start main nav-->
             <nav class="main-nav padding-15 ">
 
-                <div class="top-nav d-flex ">
+                <div class="top-nav">
 
                     <img src="./img/logo.svg" alt="" class="logo-m">
                     <img src="./img/logo-small.svg" alt="" class="logo-xs">
@@ -44,7 +44,7 @@
 
                     <!--Start Playlist-->
                     
-                        <h3 class="up-case padding-top-15">Playlist</h3>
+                        <h3 class="up-case padding-top-15 d-none">Playlist</h3>
                         <ul class="playlist-box padding-top-15">
                             <li>
                                 <i class="fa-solid fa-square-plus co-white-icon"></i>
@@ -112,7 +112,7 @@
                 <div class="main-section">
                     <!--start call to action-->
                     <nav>
-                        <ul class="d-flex j-center interation-link">
+                        <ul class="d-flex wrap j-center interation-link">
                             <li>
                                 <a href="#">In evidenza</a>
                             </li>
@@ -140,7 +140,7 @@
 
                         <h2>Recently played</h2>
 
-                        <div class="row padding-top-15 d-flex">
+                        <div class="row padding-top-15 d-flex wrap">
 
                             <div class="col test2 padding-15 text-center">
                                 <div class="cover-image">
@@ -210,7 +210,7 @@
                             <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                         </div>
 
-                        <div class="row padding-top-15 d-flex">
+                        <div class="row padding-top-15 d-flex wrap">
                             <div class="col test2 padding-15 text-center line-height">
                                 <div class="cover-image">
                                     <img src="./img/radar.jpeg" alt="">
@@ -240,7 +240,7 @@
                             <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                         </div>
 
-                        <div class="row padding-top-15 d-flex">
+                        <div class="row padding-top-15 d-flex wrap">
                             <div class="col test padding-15 text-center line-height">
                                 <div class="cover-image">
                                     <img src="./img/youg.jpeg" alt="">
@@ -272,7 +272,7 @@
 
             <nav  id="playbar" class="footer-playbar d-flex flex-footer-center">
 
-                <div class="footer-left-right d-flex flex-footer-center ">
+                <div class="footer-left-right flex-footer-center ">
                     <div class="col-footer  ">
                         <img src="./img/sinister.jpeg" alt="sinister" class="footer-img padding-15">
                     </div>
@@ -286,7 +286,7 @@
                     </div>
                 </div>
 
-                <div class="footer-mid d-flex flex-footer-col ">
+                <div class="footer-mid flex-footer-col ">
                     <div class="m-auto">
                         <i class="fa-solid fa-shuffle padding-l-r icon-s"></i>
                         <i class="fa-solid fa-backward-step padding-l-r icon-s"></i>
@@ -295,7 +295,7 @@
                         <i class="fa-solid fa-rotate-right padding-l-r icon-s"></i>
                     </div>
                     <div class="width-100 padding-top-15 ">
-                        <form class=" d-flex flex-footer-center">
+                        <form class=" footer-flex j-center">
                             <label class="text-footer-sm " for="minute">0.25</label>
                             <input type="range" id="minute" name="minute" min="0" max="10">
                             <label class="text-footer-sm " for="minute">4.30</label>
@@ -303,18 +303,18 @@
                     </div>
                 </div>
 
-                <div class="footer-left-right d-flex flex-footer-center ">
+                <div class="footer-left-right flex-footer-center more-interation">
                     <div class="footer-icon-right padding-l-r">
                         <i class="fa-solid fa-list"></i>
                     </div>
                     <div class=" flex-footer-center footer-icon-right padding-l-r">
                         <i class="fa-solid fa-tv"></i>
                     </div>
-                    <div class=" d-flex flex-footer-center footer-icon-right padding-l-r">
+                    <div class=" footer-flex flex-footer-center footer-icon-right padding-l-r">
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
-                    <form class=" d-flex flex-footer-center footer-bar-vol-right padding-l-r">
-                        <input type="range" id="minute" name="minute" min="0" max="10">
+                    <form class=" footer-flex flex-footer-center footer-bar-vol-right padding-l-r">
+                        <input type="range" id="volume" name="volume" min="0" max="10">
                     </form>
                 </div>
             </nav>

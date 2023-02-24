@@ -46,6 +46,9 @@ h4{
 .d-flex{
     display: flex;
 }
+.wrap{
+    flex-wrap: wrap;
+}
 .flex-col{
     flex-direction: column;
 }
@@ -156,6 +159,7 @@ main{
 
 }
 .top-nav{
+    display: flex;
     height: calc(100% - 80px);
     overflow: hidden;
     flex-flow: column nowrap;
@@ -275,7 +279,11 @@ main{
     position: fixed;
     z-index: 1000;
 }
+.footer-flex{
+    display: flex;
+}
 .footer-left-right{
+    display: flex;
     width: 230px;
 }
 .width-100{
@@ -285,6 +293,7 @@ main{
     margin: 0 auto;
 }
 .footer-mid{
+    display: flex;
     width: calc(100% - 460px);
 }
 .footer-left-right, .footer-mid{
@@ -296,6 +305,9 @@ main{
 .flex-footer-col{
     flex-flow: column wrap;
     align-content: center;
+}
+.nowrap{
+    flex-wrap: nowrap;
 }
 .text-footer-s{
     font-size: 0.8rem;
@@ -370,6 +382,9 @@ input[type="range"]:hover::-moz-range-thumb{
     display: block;
     background-color: var(--color-green);
 }
+#volume{
+    width: 100px;
+}
 
 .box-debug{
     width: 50px;
@@ -391,8 +406,9 @@ input[type="range"]:hover::-moz-range-thumb{
     .col{
         width: calc(100% / 4);
     }
-    .d-flex{
-        flex-wrap: wrap;
+    
+    .playlist-box{
+        overflow-y: auto;
     }
 
 }
@@ -401,9 +417,7 @@ input[type="range"]:hover::-moz-range-thumb{
     .col{
         width: calc(100% / 3);
     }
-    .d-flex{
-        flex-wrap: wrap;
-    }
+    
 }
 
 @media screen and (max-width:768px){
@@ -426,7 +440,7 @@ input[type="range"]:hover::-moz-range-thumb{
         width: calc(100% - 70px);
     }
     .main-nav a, .main-nav .playlist-box, .main-nav .logo-m, 
-    .install-app p, .login-user h4{
+    .install-app p, .login-user h4, .d-none{
         display: none;
     }
     .main-nav .logo-xs{
